@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "STUD-.####",
+ "creation": "2026-07-22 11:35:49.612388",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "student_name",
+  "roll_number",
+  "gender",
+  "year_of_study",
+  "department",
+  "mobile_number",
+  "fees_details_section",
+  "academic_fee",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "roll_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Roll Number",
+   "reqd": 1
+  },
+  {
+   "default": "Male",
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year_of_study",
+   "fieldtype": "Select",
+   "label": "Year of study",
+   "options": "I\nII\nIII\nIV",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Autocomplete",
+   "label": "Department",
+   "options": "CSE\nCSD\nEEE\nECE\nIT\nMECH\nCIVIL\nAIDS\nAIML\nMTS\nCHEM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fees_details_section",
+   "fieldtype": "Section Break",
+   "label": "Fees Details"
+  },
+  {
+   "default": "100,000.00",
+   "fieldname": "academic_fee",
+   "fieldtype": "Read Only",
+   "label": "Academic Fee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Paid\nNot Paid",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-22 12:12:49.990808",
+ "modified_by": "Administrator",
+ "module": "Score",
+ "name": "Student_fee",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Paid"
+  },
+  {
+   "color": "Red",
+   "title": "Not Paid"
+  }
+ ]
+}

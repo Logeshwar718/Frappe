@@ -4,6 +4,13 @@ app_publisher = "logeshwar"
 app_description = "Scorecard management"
 app_email = "logeshwarks2005@gmail.com"
 app_license = "mit"
+app_include_js = "custom_desk.bundle.js"
+
+doc_events={
+  "Test_Document":{
+    "validate":"score_management.api.validate"
+  }
+}
 
 # Apps
 # ------------------
