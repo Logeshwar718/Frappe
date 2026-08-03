@@ -9,6 +9,7 @@
  "field_order": [
   "name1",
   "age",
+  "department",
   "description"
  ],
  "fields": [
@@ -26,12 +27,17 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-03 13:53:29.099021",
+ "modified": "2026-08-03 16:57:50.076659",
  "modified_by": "Administrator",
  "module": "Score",
  "name": "Test_Document",
